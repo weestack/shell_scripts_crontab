@@ -1,2 +1,2 @@
 #!/bin/sh
-pfkill $EDITOR_NAME
+pkill $EDITOR_NAME

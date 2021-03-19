@@ -1,6 +1,6 @@
 #!/bin/sh
 
-file=$(echo "incominginv$REMOTE_PATH.txt")
+file="$REMOTE_PATH/incominginv$(date +"%Y%m%d").txt"
 echo $file > /home/weestack/test.txt
 touch $file
 gedit --new-window -s $file
