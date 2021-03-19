@@ -67,7 +67,7 @@ install_dependencies() {
 update_cronjob_with_new_settings() {
     init_cronjob
     prepare_daily_scripts
-    printf "Updating daily scripts and crontab"
+    printf "Updating daily scripts and crontab\n"
 }
 
 disable_conjob_and_cleanup() {
