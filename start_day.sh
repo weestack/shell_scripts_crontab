@@ -3,7 +3,7 @@
 file="$REMOTE_PATH/incominginv$(date +"%Y%m%d").txt"
 touch $file
 
-gsettings set org.gnome.gedit.preferences.editor auto-save-interval 1;
-gsettings set org.gnome.gedit.preferences.editor auto-save true;
+gsettings set org.gnome.gedit.preferences.editor auto-save-interval $AUTO_INT;
+gsettings set org.gnome.gedit.preferences.editor auto-save $AUTO;
 
-gedit --new-window -s $file
+gedit --new-window -s $file >> /tmp/gedit_logging

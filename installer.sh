@@ -1,9 +1,8 @@
 #!/bin/sh
-
 . ./settings.sh
 
-start_editor="export DISPLAY=$display;export REMOTE_PATH=$remote_folder; /bin/sh $start_day_script_path;"
-end_editor="export DISPLAY=$display;export REMOTE_PATH=$remote_folder;export EDITOR_NAME=$text_editor_name;/bin/sh $end_day_script_path;"
+start_editor="export DISPLAY=$display;export REMOTE_PATH=$remote_folder;export AUTO=$autosave;expor AUTO_INT=$autosave_interval;/bin/sh $start_day_script_path;"
+end_editor="export DISPLAY=$display;export REMOTE_PATH=$remote_folder;export EDITOR_NAME=$text_editor_name;export AUTO=$autosave;expor AUTO_INT=$autosave_interval;/bin/sh $end_day_script_path;"
 
 print_commands() {
     printf "=======================================================\n"
