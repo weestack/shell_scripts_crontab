@@ -44,7 +44,7 @@ init_cronjob() {
     # cleanup service
     rm crontab
 
-    prinf "Cronjob initiated\n\n"
+    printf "Cronjob initiated\n\n"
 }
 
 
